@@ -1,0 +1,131 @@
+{
+  "id": "56ea89f7-ab8a-4b84-9651-612c2423f8f1",
+  "version": "2.0",
+  "name": "test",
+  "url": "https://shahabhayphotography.000webhostapp.com/index.php",
+  "tests": [{
+    "id": "6028988e-5c90-493c-a967-9bdedd232ea4",
+    "name": "test",
+    "commands": [{
+      "id": "908f91d0-a4a3-41a5-a4a4-f7914dc06a48",
+      "comment": "",
+      "command": "open",
+      "target": "https://shahabhayphotography.000webhostapp.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7811b584-5542-41f3-8973-1f186de50bc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a769371-4a5d-45f7-9fa3-3c6742e019c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=reg",
+      "targets": [
+        ["id=reg", "id"],
+        ["css=#reg", "css:finder"],
+        ["xpath=//a[@id='reg']", "xpath:attributes"],
+        ["xpath=//li[@id='register']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'pages/visitor/register.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d0512b4-b8f4-45ec-9803-b616ebaa7ddc",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=div:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15fc948d-263b-48ea-bbd2-f591d0626ebf",
+      "comment": "",
+      "command": "store",
+      "target": "J@sh1573",
+      "targets": [],
+      "value": "pass"
+    }, {
+      "id": "9be8bb55-dfcc-47cc-b16e-f6dc43fc303e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=pass",
+      "targets": [],
+      "value": "${pass}"
+    }, {
+      "id": "f8600d5f-45c7-4fd3-bf50-30f63a545ab2",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=cpass",
+      "targets": [],
+      "value": "${pass}"
+    }, {
+      "id": "eb38e802-f584-4207-b1a2-fb8f8af383dd",
+      "comment": "",
+      "command": "storeValue",
+      "target": "name=pass",
+      "targets": [],
+      "value": "pass"
+    }, {
+      "id": "73886865-392c-48c3-ad86-605a2a1b4fd9",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=cpass",
+      "targets": [],
+      "value": "${pass}"
+    }, {
+      "id": "ce06706d-88ef-4dde-8c2d-9980e82f9b5c",
+      "comment": "",
+      "command": "echo",
+      "target": "password and conform password is same",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4f4b577-c05d-42b0-b35d-21152bc4d20a",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(4) > label",
+      "targets": [
+        ["css=td:nth-child(4) > label", "css:finder"],
+        ["xpath=//td[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Female')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1492198-5176-48f8-aa8b-419b9304d221",
+      "comment": "",
+      "command": "storeAttribute",
+      "target": "submit=btn.submit@type",
+      "targets": [],
+      "value": "type"
+    }, {
+      "id": "83f5163b-a604-4a12-a532-5b705833c0f5",
+      "comment": "",
+      "command": "echo",
+      "target": "${type}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6d946676-3ec2-416b-913d-979ba66c2783",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6028988e-5c90-493c-a967-9bdedd232ea4"]
+  }],
+  "urls": ["https://shahabhayphotography.000webhostapp.com/index.php", "https://shahabhayphotography.000webhostapp.com/pages/visitor/register.php"],
+  "plugins": []
+}
